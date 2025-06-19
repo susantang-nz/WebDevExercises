@@ -1,0 +1,26 @@
+/* Write your code here: */
+
+/* 1. Select both elements */
+h1, h2 {
+    color:blueviolet;
+}
+
+/* 2. Select the child element */
+.box > p {
+    color: firebrick;
+}
+
+/* 3. apply changes for descendants */
+.box li {
+    color: blue;
+}
+
+/* 4. chaining - apply the changes for all requirements */
+li.done {
+    color: seagreen;
+}
+
+/* 5. combining combinors */
+ul p.done {
+    font-size: 0.5rem;
+}
