@@ -1,0 +1,37 @@
+/* Keyword values
+text-align: start;
+text-align: end;
+text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;
+text-align: match-parent; */
+
+body {
+    background-color: black;
+}
+
+img {
+    border: 5px solid white;
+    width: 100%; 
+}
+
+.container {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    width: 50%; /* 占父容器的一半 */
+    margin-left: 25%;/*离左边25%， or
+    /* margin: 0 auto; */
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
