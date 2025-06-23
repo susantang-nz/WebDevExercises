@@ -1,8 +1,0 @@
-Flex layout resources: 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-https://appbrewery.github.io/flex-layout/
-
-https://appbrewery.github.io/flexboxfroggy/
-
-https://appbrewery.github.io/flexbox-sizing-exercise/
