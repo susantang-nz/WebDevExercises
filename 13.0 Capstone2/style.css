@@ -3,7 +3,8 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: lavenderblush;
+    background-color: #F4EBD3;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 .heading-container {
@@ -27,39 +28,43 @@ body {
 }
 
 .heading-text-container > h1 {
-    color: rgb(0, 140, 255);
-    font-size: 70px;
+    color: #555879;
+    font-size: 5rem;
     padding: 0;
     margin:0;
 }
 
 .heading-text-container > p {
-    color: rgb(0, 140, 255);
-    font-size: 30px;
+    color: #555879;
+    font-size: 2rem;
     padding:0;
     margin:0;
 }
 
 .cat {
-    font-size:60px;
+    font-size:3rem;
 }
 
 .mystery-quest-regular {
   font-family: "Mystery Quest", system-ui;
   font-weight: 400;
   font-style: normal;
-  color: rgb(0, 140, 255);
+  color: #555879;
 }
 
 .main-container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     height: 100vh;
 }
 
+.main-container p {
+    font-size:1.5rem;
+}
+
 .hello-container {
     display: block;
-    width:400px;
+    width:50%;
     margin: 5% auto;
     text-align:justify;
 
@@ -74,36 +79,45 @@ body {
 
 .skill-container {
     margin: 5% 5%;
+    text-align: center;
 }
 
 .skill-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     gap:5%;
+    flex-wrap: wrap;
 }
 
 .skill-col {
+    width: 400px;
+    height: 400px;
     display: block;
     text-align: center;
-    max-width: 300px;
 }
 
-.skill-row img {
+.skill-col p {
+    text-align: justify;
+}
+
+
+
+.skill-col img {
     width:300px;
     height: 200px;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .contact-container {
     margin: 5% 15%;
 }
 
-.contact-container ul {
+.contact-container .contact-row {
     display: flex;
     justify-content: space-between;
-}
-
-li {
-    list-style: none;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -114,6 +128,7 @@ li {
 .subheading {
     display: block;
     text-align: center;
+    font-size: 60px;
 }
 
 
