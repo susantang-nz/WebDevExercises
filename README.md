@@ -1,13 +1,13 @@
-# WebDevExercises
+# Web Develpment Bootcamp Capstone Projects
 
 This repository documents my learning journey through the **Udemy course: The Complete 2024 Web Development Bootcamp** by Dr. Angela Yu.
 
 It includes:
 
-- 🧩 **Exercises** – small coding tasks (solution code provided by tutor)
-- 🛠️ **Projects** – practical web development mini-projects (solution code provided by tutor)
-- 🚀 **Capstones** – larger projects that demonstrate what I’ve learned (my own work)
+- 🚀 **Capstones** – larger projects that demonstrate what I’ve learned (_my own work_)
   (deployed on GitHub Pages)
+- 🛠️ **Projects** – practical web development mini-projects (_solution code provided by tutor_)
+- 🧩 **Exercises** – small coding tasks (_solution code provided by tutor_)
 
 ---
 
