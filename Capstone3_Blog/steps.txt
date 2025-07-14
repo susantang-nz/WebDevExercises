@@ -92,6 +92,7 @@ const add = (a, b) => a + b;
 
 to do:
 header: 修改字体颜色，修改button颜色
-new post needs to be added on the top of the page
+new post needs to be added on the top of the page: posts.unshift（）
 when click delete, ask auth, ask comfirm
 allow image empty,and upload picture, with size info
+填表时候提醒，如果内容为空

@@ -37,7 +37,9 @@ app.post("/add", (req, res) => {
         content: req.body.content,
     }
 
-    posts.push(newPost);
+    // posts.push(newPost); // push是把新post放在表单最后
+    posts.unshift(newPost);
+
     res.redirect(`/posts/${newPost.id}`);
 })
 
@@ -47,7 +49,7 @@ app.get("/posts/:id", (req, res) => {
     const post = posts.find(p => p.id === idFromUrl); // 在数据里找对应帖子
 
     if (post) {
-        res.render("post.ejs", {post});
+        res.render("post.ejs", { post });
     } else {
         res.status(404).send("Post Not Found.");
     };
@@ -60,7 +62,7 @@ app.get("/posts/:id/edit", (req, res) => {
     const idToEdit = Number(req.params.id);
     const post = posts.find(p => p.id === idToEdit);
     if (post) {
-        res.render("edit.ejs", {post});
+        res.render("edit.ejs", { post });
     } else {
         res.status(404).send("Post Not Found,");
     };
@@ -75,7 +77,7 @@ app.post("/posts/:id/edit", (req, res) => {
     const content = req.body.content;
 
     // 从posts数组中找到id匹配的那一篇
-    const post = posts.find(function(p) {
+    const post = posts.find(function (p) {
         return p.id === idTOEdit;
     });
 
@@ -85,7 +87,7 @@ app.post("/posts/:id/edit", (req, res) => {
         post.image = image;
         post.content = content;
         // 然后跳转到这篇文章的详细页
-        res.redirect("/posts/" +idTOEdit);
+        res.redirect("/posts/" + idTOEdit);
     } else {
         res.status(404).send("Post Not Found,");
     };
